@@ -1,0 +1,10 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Training\Retailer\Api\RetailerRepositoryInterface"
+                type="Training\Retailer\Model\RetailerRepository" />
+    <preference for="Training\Retailer\Api\Data\RetailerInterface"
+                type="Training\Retailer\Model\Retailer" />
+    <preference for="Training\Retailer\Api\Data\RetailerSearchResultsInterface"
+                type="Magento\Framework\Api\SearchResults" />
+</config>

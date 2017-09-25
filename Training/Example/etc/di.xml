@@ -1,0 +1,12 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Framework\Logger\Monolog"
+                type="Training\Example\Model\Logger" />
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="aroundPrice" type="Training\Example\Plugin\AlterPrice" sortOrder="10"/>
+    </type>
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="alterQty" type="Training\Example\Plugin\AlterCartQty" sortOrder="0" />
+    </type>
+
+</config>
